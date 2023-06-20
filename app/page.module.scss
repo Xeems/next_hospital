@@ -1,0 +1,66 @@
+.wrapper{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  height: 100vh;
+  backdrop-filter: blur(20px);
+  box-shadow: 0 0 30px rgba(0,0,0, .5);
+  box-sizing: border-box;
+  
+}
+
+.container{
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+}
+
+.container > div{
+  margin-top: 5px;
+  margin-bottom: 25px;
+}
+
+.background{
+  display: flex;
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+}
+
+.loginButton{
+  margin-top: 15px;
+  width: 100%;
+  height: 40px;
+  border-radius: 10px;
+  border: 0px;
+  background-color: #066cfc;
+  font-size: 20px;
+  color: white; 
+}
+.loginButton:active{
+  background-color: #0058d3;
+}
+
+.inputs{
+  box-sizing: border-box;
+  align-self: center;
+  padding: 15px;
+  box-shadow:0 0 15px 4px rgba(0,0,0,0.06);
+  height: 40px;
+  width: 100%;
+  border-radius: 10px;
+  border: 1px solid #eee;
+  outline: none;
+  font-size: 16px;
+}
+
+.inputs:hover{
+  border-color: #c4c3c3;
+}
+
+.inputs:focus{
+  border: 2px solid #066cfc; 
+}
