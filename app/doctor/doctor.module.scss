@@ -1,0 +1,19 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.servicesList{
+    width: 65%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+}
+
+.serviceContainer{
+    margin-bottom: 15px;
+    display: flex;
+    justify-content: center;
+}
