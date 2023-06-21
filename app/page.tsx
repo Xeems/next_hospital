@@ -1,6 +1,6 @@
 import Image from 'next/image'
 import BackgroundPic from '@/public/loginBackGround.jpg'
-import styles from './page.module.scss'
+import styles from '@/styles/login.module.scss'
 
 export default function LoginPage() {
     return (
