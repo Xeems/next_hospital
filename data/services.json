@@ -1,36 +1,57 @@
 [
     {
+      "id": 1,
+      "doctorId": 1,
+      "service": {
         "id": 1,
-        "name": "Лечение простаты",
-        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex sapiente consequatur voluptatem nihil placeat recusandae? Ipsam consectetur facere, error corrupti ipsa odio quidem dolores voluptatibus cumque iusto accusantium dolorem quos." , 
-        "price": 1000    
+        "name": "Услуга 1",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+      },
+      "price": 100,
+      "duration": 60
     },
-
     {
+      "id": 2,
+      "doctorId": 1,
+      "service": {
         "id": 2,
-        "name": "Лечение алкоголизма",
-        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex sapiente consequatur voluptatem nihil placeat recusandae? Ipsam consectetur facere, error corrupti ipsa odio quidem dolores voluptatibus cumque iusto accusantium dolorem quos." ,
-        "price": 1000    
+        "name": "Услуга 2",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+      },
+      "price": 150,
+      "duration": 45
     },
-
     {
-        "id": 3,
-        "name": "Лечение шизофрении",
-        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex sapiente consequatur voluptatem nihil placeat recusandae? Ipsam consectetur facere, error corrupti ipsa odio quidem dolores voluptatibus cumque iusto accusantium dolorem quos." ,
-        "price": 1000    
+      "id": 3,
+      "doctorId": 1,
+      "service": {
+        "id": 1,
+        "name": "Услуга 3",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+      },
+      "price": 120,
+      "duration": 60
     },
-
     {
-        "id": 4,
-        "name": "Лечение долбоебизма",
-        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex sapiente consequatur voluptatem nihil placeat recusandae? Ipsam consectetur facere, error corrupti ipsa odio quidem dolores voluptatibus cumque iusto accusantium dolorem quos." ,
-        "price": 1000    
+      "id": 4,
+      "doctorId": 1,
+      "service": {
+        "id": 1,
+        "name": "Услуга 3",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+      },
+      "price": 120,
+      "duration": 60
     },
-
     {
-        "id": 5,
-        "name": "Лечение дементия",
-        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex sapiente consequatur voluptatem nihil placeat recusandae? Ipsam consectetur facere, error corrupti ipsa odio quidem dolores voluptatibus cumque iusto accusantium dolorem quos." ,
-        "price": 1000    
+      "id": 5,
+      "doctorId": 1,
+      "service": {
+        "id": 1,
+        "name": "Услуга 3",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+      },
+      "price": 120,
+      "duration": 60
     }
 ]

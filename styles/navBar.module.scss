@@ -3,7 +3,10 @@
     width: 100%;
     display: flex;
     justify-content: flex-end;      
-    background-color: #066cfc;
+    background-color: rgba(6, 108, 252, 0.3);
+    position: fixed;
+    top: 0;
+    backdrop-filter: blur(5px) brightness(0.8) saturate(1.2);
 }
 
 .linkList{
@@ -42,5 +45,11 @@
 }
 
 .linkStyle:hover{
-    background-color: #0058d3;
+    background-color: rgba(0, 88, 211, 0.3);
+    backdrop-filter: blur(5px) brightness(0.8) saturate(1.2);
+}
+
+.activeLink{
+    background-color: rgba(0, 88, 211, 0.3);
+    backdrop-filter: blur(5px) brightness(0.8) saturate(1.2);
 }

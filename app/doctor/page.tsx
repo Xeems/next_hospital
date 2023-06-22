@@ -1,6 +1,6 @@
 import styles from "@/styles/doctor.module.scss"
-import data from "@/data/services.json"
 import NavBar from "@/components/NavBar"
+import {PriceList} from "@/app/services/PriceList"
 
 type NavLink ={
     Name: string;
@@ -12,21 +12,36 @@ const links: NavLink[] = [
     {Name: "Записи", href: "/appointments"}
 ]
 
-export default function DoctorPage() {
+let priceLisrt = new PriceList();
+
+export default function DoctorPage() {   
+    const data = priceLisrt.GetServices();
+    
     return(
+        <>
+        <NavBar links={links}></NavBar> 
         <div className={styles.container}>
-            <NavBar links={links}></NavBar>
-            {data.map((el) =>(
-                <ul key={el.id} className={styles.servicesList}>
-                    <li>
+            <div className={styles.newServiceContainer}>
+                <h2>Новая услуга</h2>
+                <p>Название услуги:</p>
+                <input placeholder="Название"/>    
+            </div>
+
+            <ul  className={styles.servicesList}>
+                {data.map((el) =>( 
+                    <li key={el.id}>
                         <div className={styles.serviceContainer}>
-                            <p>{el.name}</p>
-                            <p>{el.description}</p>
-                            <p>{el.price}</p>
+                            <h2>{el.service.name}</h2>
+                            <p className={styles.serviceDescription}>{el.service.description}</p>
+                            <div сlassName = >
+                                <p>{el.price} .руб</p>
+                                <p>{el.duration} .мин</p>
+                            </div>
                         </div>
                     </li>
-                </ul>
-            ))}
+                ))}
+            </ul>
         </div>
+        </>
     )
 }

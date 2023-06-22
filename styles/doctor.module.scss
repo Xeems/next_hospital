@@ -3,17 +3,33 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-top: 100px;
+}
+
+.newServiceContainer{
+    width: 65%;
 }
 
 .servicesList{
+    list-style-type: none;
     width: 65%;
-    margin: auto;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
 }
 
 .serviceContainer{
     margin-bottom: 15px;
     display: flex;
+    flex-direction: column;
     justify-content: center;
+    background-color: rgb(137, 185, 251);
+    border-radius: 15px;
+    padding: 25px 35px;
+}
+
+.serviceDescription{
+    font-family: 'Roboto-Light', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    margin-bottom: 20px;
 }

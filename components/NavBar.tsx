@@ -1,7 +1,8 @@
-"use client"
+"use client";
 
 import styles from '@/styles/navBar.module.scss'
 import Link from 'next/link';
+import { useState } from 'react';
 import {usePathname} from 'next/navigation';
 
 
@@ -19,15 +20,15 @@ const NavBar = ({links}: LinkProps) =>{
 
     return(
         <nav className={styles.navStyle}>
-            <ul className={styles.linkList}>
-                {links.map((link) =>(
-                    <li key={link.href} >                
-                        <div className={styles.linksContainer}>
-                            <Link href={link.href} className={styles.linkStyle}>{link.Name}</Link>
-                        </div>  
-                    </li>              
-                ))}
-            </ul>
+            <div className={styles.linksContainer}>
+                {links.map((link) =>{   
+                    const isActive = pathName === link.href;
+                    return(
+                        <div key={link.href} className={styles.linkContainer}>
+                            <Link href={link.href} className={isActive ? styles.activeLink && styles.linkStyle : styles.linkStyle}>{link.Name}</Link>
+                        </div>                                 
+                )})}
+            </div>
         </nav>
     )
 }
