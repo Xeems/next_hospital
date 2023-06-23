@@ -33,7 +33,7 @@ export default function DoctorPage() {
                         <div className={styles.serviceContainer}>
                             <h2>{el.service.name}</h2>
                             <p className={styles.serviceDescription}>{el.service.description}</p>
-                            <div сlassName = >
+                            <div className = {styles.horizontalContainer}>
                                 <p>{el.price} .руб</p>
                                 <p>{el.duration} .мин</p>
                             </div>
