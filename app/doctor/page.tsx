@@ -22,19 +22,25 @@ export default function DoctorPage() {
         <NavBar links={links}></NavBar> 
         <div className={styles.container}>
             <div className={styles.newServiceContainer}>
-                <h2>Новая услуга</h2>
+                <h2 className="text-3xl">Новая услуга</h2>
                 <p>Название услуги:</p>
-                <input placeholder="Название"/>    
+                <input placeholder="Название" className={styles.serviceInput}/> 
+                <textarea className={styles.serviceInput}></textarea>
+                <div className="flex flex-row">   
+                    <input placeholder="Цена" className={styles.serviceInput}/>
+                    <input placeholder="Продолжительность" className="serviceInput w-1/4"/> 
+                </div>
             </div>
 
             <ul  className={styles.servicesList}>
+                <h2 className="text-3xl my-8">Список услуг</h2>
                 {data.map((el) =>( 
                     <li key={el.id}>
                         <div className={styles.serviceContainer}>
-                            <h2>{el.service.name}</h2>
+                            <h2 className="font-bold text-2xl">{el.service.name}</h2>
                             <p className={styles.serviceDescription}>{el.service.description}</p>
-                            <div className = {styles.horizontalContainer}>
-                                <p>{el.price} .руб</p>
+                            <div className = "flex flex-row w-auto">
+                                <p className="mr-5">{el.price} .руб</p>
                                 <p>{el.duration} .мин</p>
                             </div>
                         </div>

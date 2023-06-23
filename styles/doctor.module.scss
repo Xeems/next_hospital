@@ -7,7 +7,13 @@
 }
 
 .newServiceContainer{
-    width: 65%;
+    @apply m-4 mt-8 pr-32;
+    width: 65%
+}
+
+.serviceInput{
+    @apply shadow appearance-none border rounded w-full py-2 px-3 leading-tight mt-4  ;
+
 }
 
 .servicesList{
@@ -18,12 +24,11 @@
 }
 
 .serviceContainer{
-    margin-bottom: 15px;
+    @apply border rounded-2xl border-blue-500 mb-4;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    background-color: rgb(137, 185, 251);
-    border-radius: 15px;
+    background-color: rgb(181, 212, 255);
     padding: 25px 35px;
 }
 
