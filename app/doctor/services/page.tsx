@@ -1,25 +1,13 @@
 import styles from "@/styles/doctor.module.scss"
-import NavBar from "@/components/NavBar"
 import {PriceList} from "@/app/services/PriceList"
-
-type NavLink ={
-    Name: string;
-    href: string;
-};
-
-const links: NavLink[] = [
-    {Name: "Услуги", href: "/services"},
-    {Name: "Записи", href: "/appointments"}
-]
 
 let priceLisrt = new PriceList();
 
-export default function DoctorPage() {   
+export default function ServicesPage() {   
     const data = priceLisrt.GetServices();
     
     return(
         <>
-        <NavBar links={links}></NavBar> 
         <div className={styles.container}>
             <div className={styles.newServiceContainer}>
                 <h2 className="text-3xl">Новая услуга</h2>
@@ -27,8 +15,12 @@ export default function DoctorPage() {
                 <input placeholder="Название" className={styles.serviceInput}/> 
                 <textarea className={styles.serviceInput}></textarea>
                 <div className="flex flex-row">   
-                    <input placeholder="Цена" className={styles.serviceInput}/>
-                    <input placeholder="Продолжительность" className="serviceInput w-1/4"/> 
+                    <div className="w-1/6 mr-2">
+                        <input placeholder="Цена" className={styles.serviceInput}/>
+                    </div>
+                    <div className="w-1/6">
+                        <input placeholder="Продолжительность" className={styles.serviceInput}/> 
+                    </div>
                 </div>
             </div>
 

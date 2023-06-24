@@ -25,7 +25,7 @@ const NavBar = ({links}: LinkProps) =>{
                     const isActive = pathName === link.href;
                     return(
                         <div key={link.href} className={styles.linkContainer}>
-                            <Link href={link.href} className={isActive ? styles.activeLink && styles.linkStyle : styles.linkStyle}>{link.Name}</Link>
+                            <Link href={link.href} className={isActive ? (styles.activeLink && styles.linkStyle) : styles.linkStyle}>{link.Name}</Link>
                         </div>                                 
                 )})}
             </div>
