@@ -11,7 +11,7 @@ export default function ServicesPage() {
         <div className={styles.container}>
             <div className={styles.newServiceContainer}>
                 <h2 className="text-3xl">Новая услуга</h2>
-                <p>Название услуги:</p>
+                <p className="mb-4">Название услуги:</p>
                 <input placeholder="Название" className={styles.serviceInput}/> 
                 <textarea className={styles.serviceInput}></textarea>
                 <div className="flex flex-row">   
@@ -22,6 +22,7 @@ export default function ServicesPage() {
                         <input placeholder="Продолжительность" className={styles.serviceInput}/> 
                     </div>
                 </div>
+                <button className="w-24 h-9 relative mt-3 -z-10 rounded-sm text-white bg-blue-500 hover:bg-blue-700">Добавить</button>
             </div>
 
             <ul  className={styles.servicesList}>

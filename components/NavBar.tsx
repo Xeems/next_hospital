@@ -1,6 +1,6 @@
 "use client";
 
-import styles from '@/styles/navBar.module.scss'
+import styles from '@/styles/components/navBar.module.scss'
 import Link from 'next/link';
 import { useState } from 'react';
 import {usePathname} from 'next/navigation';

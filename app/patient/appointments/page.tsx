@@ -1,11 +1,9 @@
-import Image from 'next/image'
-import BackgroundPic from '@/public/loginBackGround.jpg'
-import styles from '@/styles/login.module.scss'
+import SearchBar from '@/components/SerachBar';
 
 export default function appointmentsPage() {
     return (
     <>
-    
+        
     </>
     )
 }
