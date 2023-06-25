@@ -2,7 +2,12 @@ import data from '@/data/services.json'
 
 export class PriceList{
 
-    GetServices(){
+    GetServicesByDoctor(){
+        const respone = data;
+        return data;
+    }
+
+    GetServicesByName(serviceName: string){
         const respone = data;
         return data;
     }

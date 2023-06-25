@@ -4,7 +4,7 @@ import {PriceList} from "@/app/services/PriceList"
 let priceLisrt = new PriceList();
 
 export default function ServicesPage() {   
-    const data = priceLisrt.GetServices();
+    const data = priceLisrt.GetServicesByDoctor();
     
     return(
         <>

@@ -2,17 +2,33 @@
 import styles from '@/styles/components/SearchBar.module.scss';
 import Image from 'next/image';
 import imSource from '@/public/searchIcon.svg'
-import { MouseEventHandler } from 'react';
+import React, { useState, ChangeEvent, FormEvent } from 'react';
 
-export default function SerachBar(searchClick: MouseEventHandler) {
+interface SearchBarProps {
+    onSearch: (searchTerm: string) => void;
+  }
+
+const SerachBar :React.FC<SearchBarProps> = ({onSearch}) => {
+    const [searchTerm, setSearchTerm] = useState('');
+
+    const handleInputChange = (event: React.ChangeEvent<HTMLInputElement>) => {
+        setSearchTerm(event.target.value);
+      };
+    
+      const handleFormSubmit = (event: React.FormEvent<HTMLFormElement>) => {
+        event.preventDefault();
+        onSearch(searchTerm);
+      };
    
     return(
-        <div className='flex flex-row h-12 w-auto'>
-            <input className={styles.searchInput}/>
-            <button className={styles.searchButton}>
-                <Image src={imSource} alt='search image' fill={true} className={styles.searchImage} onClick={searchClick}></Image>
+        <form onSubmit={handleFormSubmit} className='flex flex-row h-12 w-auto'>
+            <input value={searchTerm} onChange={handleInputChange} className={styles.searchInput}/>
+            <button type='submit' className={styles.searchButton} >
+                <Image src={imSource} alt='search image' fill={true} className={styles.searchImage}></Image>
             </button>
-        </div>
+        </form>
     )
 }
+
+export default SerachBar;
 

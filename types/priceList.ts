@@ -1,5 +1,5 @@
 
-interface priceList {
+export interface priceList {
     id: number;
     doctorId: number;
     service: service;
