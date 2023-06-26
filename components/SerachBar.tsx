@@ -3,13 +3,12 @@ import styles from '@/styles/components/SearchBar.module.scss';
 import Image from 'next/image';
 import imSource from '@/public/searchIcon.svg'
 import React, { useState, ChangeEvent, FormEvent } from 'react';
+import { useRouter } from 'next/navigation';
 
-interface SearchBarProps {
-    onSearch: (searchTerm: string) => void;
-  }
 
-const SerachBar :React.FC<SearchBarProps> = ({onSearch}) => {
+const SerachBar = () => {
     const [searchTerm, setSearchTerm] = useState('');
+    const router = useRouter()
 
     const handleInputChange = (event: React.ChangeEvent<HTMLInputElement>) => {
         setSearchTerm(event.target.value);
@@ -17,7 +16,12 @@ const SerachBar :React.FC<SearchBarProps> = ({onSearch}) => {
     
       const handleFormSubmit = (event: React.FormEvent<HTMLFormElement>) => {
         event.preventDefault();
-        onSearch(searchTerm);
+
+        var searchURL = encodeURI(searchTerm);
+        const navigateLink = '/patient/ServiceSearch/result?search_query='+ searchURL;
+        console.log(navigateLink);
+
+        router.push(navigateLink);
       };
    
     return(

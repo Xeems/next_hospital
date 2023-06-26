@@ -4,5 +4,5 @@ export interface priceList {
     doctorId: number;
     service: service;
     price: number;
-    duration: number; //продолжительность в минутах
+    duration: number;
 }

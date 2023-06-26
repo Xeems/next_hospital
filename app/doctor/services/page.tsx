@@ -1,5 +1,5 @@
 import styles from "@/styles/doctor.module.scss"
-import {PriceList} from "@/app/services/PriceList"
+import {PriceList} from "@/app/api/PriceList"
 
 let priceLisrt = new PriceList();
 

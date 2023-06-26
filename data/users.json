@@ -1,0 +1,15 @@
+[
+    {
+        "id": "1",
+        "login": "patient",
+        "password": "patient",
+        "role": "patient"
+    },
+
+    {
+        "id": "2",
+        "login": "doctor",
+        "password": "doctor",
+        "role": "doctor"
+    }
+]
