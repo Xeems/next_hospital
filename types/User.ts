@@ -1,11 +1,13 @@
 export interface User {
-    id: number;
+    id: string;
     login: string;
     password: string;
     role: roles;
 }
 
 enum roles{
-    doctor,
-    patient
+    patient,
+    doctor
 }
+
+

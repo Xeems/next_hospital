@@ -11,7 +11,6 @@ export default function ServicesPage() {
         <div className={styles.container}>
             <div className={styles.newServiceContainer}>
                 <h2 className="text-3xl">Новая услуга</h2>
-                <p className="mb-4">Название услуги:</p>
                 <input placeholder="Название" className={styles.serviceInput}/> 
                 <textarea className={styles.serviceInput}></textarea>
                 <div className="flex flex-row">   

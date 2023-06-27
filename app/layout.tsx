@@ -1,3 +1,4 @@
+import { Providers } from '@/components/Providers'
 import './globals.scss'
 
 
@@ -13,7 +14,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body>{children}</body>
+      <Providers>
+        <body>{children}</body>
+      </Providers>
     </html>
   )
 }

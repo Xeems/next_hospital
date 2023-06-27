@@ -2,7 +2,6 @@
 
 import styles from '@/styles/components/navBar.module.scss'
 import Link from 'next/link';
-import { useState } from 'react';
 import {usePathname} from 'next/navigation';
 
 
@@ -16,6 +15,7 @@ type LinkProps = {
 };
 
 const NavBar = ({links}: LinkProps) =>{
+
     const pathName = usePathname();
 
     return(
