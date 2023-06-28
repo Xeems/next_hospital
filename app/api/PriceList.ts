@@ -11,4 +11,9 @@ export class PriceList{
         const respone = data;
         return data;
     }
+
+    GetAllServices(){
+        const respone = data;
+        return data;
+    }
 }

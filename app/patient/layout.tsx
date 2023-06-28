@@ -6,7 +6,7 @@ type NavLink ={
 };
 
 const links: NavLink[] = [
-    {Name: "Записи", href: "/patient/services"},
+    {Name: "Записи", href: "/patient/ServiceSearch"},
     {Name: "Приемы", href: "/patient/appointments"}
 ]
 
